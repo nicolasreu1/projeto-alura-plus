@@ -1,0 +1,149 @@
+
+:root {
+    --cor-texto-destaque: #FFFFFF;
+    --cor-texto: #C0C0C0;
+    --botao-primario: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal:'Inter', sans-serif;
+    --botao-hover:#3d91f7;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-texto-destaque);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.principal{
+    background-image: url("../assets/Background.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__caixa{
+    margin: 0 6em;
+}
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
+
+.container__botao{
+    background-color: var(--botao-primario);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--cor-texto-destaque);
+    display: block;
+    margin-bottom: 1em;
+}
+
+.botao_secundario{
+    background-color: transparent;
+    border: 2px solid var(--cor-texto-destaque);
+}
+
+.container__aviso{
+    font-size: 12px;
+    color: var(--cor-texto);
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secundario__imagem{
+    width: 80%;
+}
+
+.container__descricao{
+    padding: 2em;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--cor-texto-destaque);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto{
+    color: var(--cor-texto);
+}
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__titulo{
+    font-size: 48px;
+}
+
+.dispositivos__lista{
+    color: var(--cor-texto-destaque);
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 5em 0;
+}
+
+.lista__item{
+    color: var(--cor-texto-destaque);
+    font-size: 32px;
+}
+
+.footer{
+    text-align: center;
+    padding: 5em 3em;
+}
+
+.footer__menu{
+    display: flex;
+    list-style: none;
+    margin-top: 1em;
+    justify-content: center;
+}
+
+.menu__link{
+    color: var(--cor-texto-destaque);
+    margin-left: 1em;
+}
+
+.footer__texto{
+    color: var(--cor-texto);
+    margin: 1em 0;
+    font-size: 14px;
+}
+
+.menu__link:hover{
+    color: var(--botao-primario);
+}
+
+.container__botao:hover{
+    background-color: var(--botao-hover);
+
+}
+
+.botao_secundario:hover{
+    background-color: #212d51;
+}
